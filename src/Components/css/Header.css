@@ -1,0 +1,244 @@
+
+
+
+
+
+.headerLogoImg{
+    width: 58px;
+}
+
+
+.headerTitleSectionMainContainer{
+    display: flex;
+    
+    align-items: center;
+  
+}
+.headerTitleA{
+    font-weight: 600;
+    
+}
+
+
+
+.headerMainContainer{
+
+    display: flex;
+    border-bottom:  solid 2px #5470b3 ;
+    justify-content: space-between;
+    
+    
+   
+}
+
+.headeLinkIcon{
+  width: 18px;
+  margin-right: .5em;
+}
+
+.headerUlSectionMainContainerHide{
+  position: absolute;
+  left: -1000px;
+ 
+  z-index: 10;
+  border-bottom: 10px solid var(--color-a);
+  border-radius: 16px;
+  
+  transition: .3s ease-in-out;
+}
+.headerUlSectionMainContainerShow{
+  position: absolute;
+  left: 0px;
+  z-index: 10;
+  border-radius: 0%;
+  width: auto;
+  height: auto;
+  border-bottom: 10px solid var(--color-a);
+  border-radius: 16px;
+  animation: navBarBounce .6s 1 ease-in-out;
+ 
+  
+}
+
+@keyframes navBarBounce {
+  50%{
+    width:120%
+  }
+  
+}
+
+.headerUlSectionMainContainer{
+  margin-top: -1em;
+  padding-bottom: 2em;
+  width: 100%;
+  background-color: var(--color-e);
+}
+
+
+
+.headerSectionsUl{
+    
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+    list-style-type: none;
+   
+}
+
+.headerSectionsUl li{
+   font-weight:600;
+   padding-top: 4em;
+    padding-left: .5em;
+    padding-right: .5em;
+    transition: .05s ease-in;
+}
+
+.headerSectionsUl li:hover{
+  border-bottom: 2px solid var(--color-a);
+  padding-bottom: .2em;
+ 
+}
+
+
+.headerInstagramIconImg, .headerWhatsappIconImg, .headerFacebookIcon{
+    border: 2px solid var(--color-g);
+    border-radius: 12px;
+    padding: .5em;
+    margin-left: .5em;
+    
+}
+
+
+
+
+.headerLanguageSelect{
+    
+    background-color: var(--color-a);
+    color: var(--color-e);
+    margin-top: 6px;
+    padding: 4px 0px;
+    transition: .4s ease-in;
+}
+
+.headerLanguageSelect:hover{
+    cursor: pointer;
+ }
+ .headerLanguageSelect:active{
+    transform: scale(1.8);
+ }
+ 
+ .headerLanguageSelect option{
+     background-color: var(--color-a);
+     color: var(--color-e);
+ }
+ 
+ /* nav-icon-5 */
+.nav-icon-5{
+    width: 35px;
+    height: 30px;
+    margin: 10px 10px;
+    position: relative;
+    right: 5px;
+    cursor: pointer;
+    display: flex;
+    z-index: 20;
+  }
+  .nav-icon-5 span{
+    background-color:var(--color-a);
+    position: absolute;
+    border-radius: 2px;
+    transition: .3s cubic-bezier(.8, .5, .2, 1.4);
+    width:100%;
+    height: 4px;
+    transition-duration: 500ms
+  }
+  .nav-icon-5 span:nth-child(1){
+    top:0px;
+    left: 0px;
+  }
+  .nav-icon-5 span:nth-child(2){
+    top:13px;
+    left: 0px;
+    opacity:1;
+  }
+  .nav-icon-5 span:nth-child(3){
+    bottom:0px;
+    left: 0px;
+  }
+  .nav-icon-5:not(.open):hover span:nth-child(1){
+    transform: rotate(0deg) scaleY(1.2);
+  }
+  .nav-icon-5:not(.open):hover span:nth-child(2){
+    transform: rotate(0deg) scaleY(1.1);
+  }
+  .nav-icon-5:not(.open):hover span:nth-child(3){
+    transform: rotate(0deg) scaleY(1.1);
+  }
+  .nav-icon-5.open span:nth-child(1){
+    transform: rotate(45deg);
+    top: 13px;
+  }
+  .nav-icon-5.open span:nth-child(2){
+    opacity:0;
+  }
+  .nav-icon-5.open span:nth-child(3){
+    transform: rotate(-45deg);
+    top: 13px;
+  }
+
+
+  @media screen and (min-width: 800px) {
+    .hamburguerIconMainContainer{
+      display: none;
+    }
+
+    .nav-icon-5{
+      display: none;
+    }
+    .headeLinkIcon{
+      display: none;
+    }
+    .md-headerUlSectionMainContainerShow{
+      top: 0;
+      left: 0;
+      position: relative;
+      background-color: #fff;
+      border-radius: 0;
+      width: 50%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+      
+      
+    }
+    .headerSectionsUl{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-top: 20px;
+      
+      flex-direction: row;
+    }
+
+    .headerSectionsUl li{
+      padding-top: 0px;
+    }
+
+    .HeaderButtonMainContainer{
+      display: flex;
+      position: relative;
+    }
+   
+  }
+
+
+
+
+  

@@ -1,0 +1,18 @@
+
+.importantMessagesContainer{
+  display: flex;
+  justify-content: center;
+  
+}
+
+
+.importantMessages{
+  border: solid black 2px;
+  padding: 1em;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}

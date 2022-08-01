@@ -1,0 +1,90 @@
+.HomeTourCarouselCardImg{
+    width: 100%;
+}
+
+.HomeTourCarouselTimeContainer{
+    
+    height: 26px;
+}
+
+.HomeTourCarouselTimeContainer{
+    margin-top: 2px;
+    margin-right: 4px;
+    text-align: right;
+}
+
+.HomeTourCarouselCardTimeIcon{
+    
+    width: 20px;
+}
+.HomeTourCarouselCardMainContainer{
+    margin-top: 32px;
+    border-radius: 12px;
+    border: 1px solid var(--color-g);
+    margin-right: 1em;
+}
+
+.HomeTourCarouselCardTitle{
+    margin-top: 4px;
+    font-size: 16px;
+}
+.HomeTourCarouselCardPrice{
+    margin-top: -4px;
+    font-size: 12px;
+}
+.react-multi-carousel-list{
+    width: 94%;
+}
+
+.HomeTourCarouselCardSlogan{
+    width: 90%;
+    margin-top: 1em;
+    margin-bottom: .5em;
+   
+    
+    
+}
+
+.react-multi-carousel-track {
+    margin-bottom: 1em;
+}
+
+
+
+
+@media screen and (min-width: 402px) {
+    .HomeTourCarouselCardSlogan{
+        margin-top: 32px;
+        font-size: 18px;
+        
+    }
+
+    
+   
+  }
+@media screen and (min-width: 500px) {
+    .react-multi-carousel-list{
+        width: 80%;
+    }
+
+    .HomeTourCarouselCardSlogan{
+        font-size: 20px;
+        width: 70%;
+    }
+
+    
+   
+  }
+@media screen and (min-width: 1190px) {
+   
+    .HomeTourCarouselCardSlogan{
+        font-size: 28px;
+        width: 800px;
+        
+    }
+    .react-multi-carousel-list{
+        width: 60%;
+        
+    }
+   
+  }

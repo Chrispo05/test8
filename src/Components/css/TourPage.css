@@ -1,0 +1,343 @@
+
+
+.tourIconContainer{
+    margin-right: .4em;
+}
+
+.TourIconTextContainer p{
+    
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.TourPageInfoContainer{
+    justify-content:space-evenly;
+}
+.TourPageExperienceSectionMainContainer  {
+    margin-top: 32px;
+}
+
+
+.slide div{
+    
+    object-fit: contain;
+    
+}
+.slide div img{
+   
+    object-fit: cover;
+    border-radius: 16px;
+}
+.thumb{
+    border-radius: 16px;
+}
+.thumb:hover{
+    cursor: pointer;
+}
+.thumb img{
+    border-radius: 10px;
+}
+
+
+
+/* price section */
+.TourPagePriceSectionMainContaier{
+    
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    
+    position: fixed;
+    bottom: 0;
+    z-index: 30;
+    
+}
+
+.TourPagePriceSectionContainer{
+    width: 100%;
+    height: 40px;
+    
+    background-color: var(--color-a);
+    border-radius: 12px;
+    color: var(--color-e);
+    text-align: center;
+    transition: .2s ease-in;
+    z-index: 30;
+    animation-name: colorChange;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes colorChange{
+    50%{
+        background-color: var(--color-b);
+        
+    }
+  
+
+    100%{
+        background-color: var(--color-a);
+        
+    }
+}
+.TourPagePriceSectionContainer-showContent{
+    
+    height: 280px;
+    margin-bottom: -1em;
+    background-color: #fff;
+    color: var(--color-a);
+    text-align: center;
+    border: 1px solid var(--color-a);
+    z-index: 30;
+    animation: none;
+}
+.TourPagePriceSectionA{
+    text-decoration: none;
+    border: 2px solid var(--color-b);
+    border-radius: 10px;
+    padding-right: .5em;
+    padding-left: .5em;
+    
+    
+}
+
+.control-next, .control-prev{
+    
+   
+    border-radius: 16px;
+}
+.thumb{
+    border: 1px solid var(--color-a);
+}
+
+.TourPagePriceSectionArrowImg{
+   
+  width: 14px;
+   align-self: flex-end;
+    padding: .5em;
+    margin-bottom: -1.4em;
+    
+    
+    
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid var(--color-a);
+    z-index: 32;
+}
+.TourPagePriceSectionArrowImg-show{
+    background-color: var(--color-a);
+}
+/* 
+experience section */
+.TourPageExperienceSectionMainContainer{
+    width: 90%;
+
+}
+
+.TourPagePriceSection2MainContainer  {
+    margin-top: 32px;
+}
+.TourPageExperienceSectionContainer{
+    margin-top: .5em;
+    max-width: 800px;
+   
+    max-height: 40px;
+    overflow: hidden;
+    transition: .8s ease-out;
+    cursor: pointer;
+    
+}
+
+.TourPageExperienceSectionIcon{
+    transform: rotate(90deg);
+    width: 16px;
+    animation-name: tilt-n-move-shaking;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+.TourPageExperienceSectionContainer div{
+    width:fit-content;
+    color: #fff;
+    
+    border-radius: 10px;
+    padding-bottom: .3em;
+
+    
+}
+.TourPageInfoSectionTitle{
+    background-color: var(--color-a);
+    padding-left: .5em;
+    padding-right: .5em;
+    padding-top: .2em;
+}
+
+.TourPageExperienceSectionContainer p {
+    width: 98%;
+    text-align: left;
+    margin-left: .3em;
+    
+    
+}
+.TourPageExperienceSectionContainer-show{
+    
+    max-height: 1000px;
+    
+}
+
+.TourPageItinerarySectionContainer-show{
+    
+    max-height: 2000px;
+    
+    
+}
+
+.itineraryDayItemIcon{
+    width: 18px;
+}
+
+.iconCheck{
+    width: 18px;
+}
+
+/* arrow icon animation */
+
+@keyframes tilt-n-move-shaking {
+    0% { transform: translate(0, 0) rotate(90deg); }
+    25% { transform: translate(3px, 3px) rotate(95deg); }
+    50% { transform: translate(0, 0) rotate(110deg); }
+    60% { transform: translate(0, 0) rotate(70deg); }
+    75% { transform: translate(-3px, 3px) rotate(85deg); }
+    100% { transform: translate(0, 0) rotate(90deg); }
+  }
+
+/* testimonials */
+.name-user, .profile, .reviews,.client-comment, .profile-img, .testimonial-box, .testimonial-box-container, .testimonials,.testimonial-show-js,.TestimonialsMainContainer {
+    border-bottom: none !important;
+}
+
+
+
+
+
+.TourPagePriceSection2MainContainer{
+    display: none;
+}
+
+
+
+.TourPagePriceSection2Container{
+    border: 2px solid var(--color-a);
+    border-radius: 14px;
+    padding: .5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  @media screen and (min-width: 500px) {
+    .TourPageInfoSectionTitle{
+        font-size: 22px;
+    }
+    .TourPageExperienceSectionContainer{
+        max-height: 54px;
+    }
+    .TourPageExperienceSectionContainer-show{
+    
+        max-height: 1000px;
+        
+    }
+    
+    .TourPageItinerarySectionContainer-show{
+        
+        max-height: 2000px;
+        
+        
+    }
+  }
+
+
+
+
+@media screen and (min-width: 680px) {
+    .slide{
+        height: 500px;
+       
+    }
+    .slide div img{
+        height: 500px;
+         object-fit: cover;
+    }
+    .TourPageExperienceSectionContainer p {
+        width: 90%;
+        
+        margin-left: 1em;
+        
+        
+    }
+   
+  }
+
+  @media screen and (min-width: 900px) {
+    .TourPageInfoSectionsContainer{
+        display: flex;
+        flex-direction: row;
+    }
+    .TourPagePriceSectionMainContaier{
+        display: none;
+    }
+    .TourPageExperienceSectionMainContainer{
+        width: 60%;
+        max-width: 800px;
+        
+    }
+    .TourPageInfoSectionsContainer{
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+    .TourPagePriceSection2MainContainer{
+        display: flex;
+        position: sticky;
+        top: 50%;
+    }
+   
+    .TourPageExperienceSectionContainer p {
+        width: 90%;
+        
+        margin-left: 2em;
+        
+        
+    }
+   
+  }
+  @media screen and (min-width: 1000px) {
+    .TourPageInfoContainer{
+        width: 80%;
+    }
+   
+    
+   
+  }
+@media screen and (min-width: 1200px) {
+    .slide{
+        height: 700px;
+       
+    }
+    .slide div img{
+        height: 700px;
+         object-fit: cover;
+    }
+    .TourPageInfoSectionsContainer{
+        width: 70%;
+    }
+   
+  }

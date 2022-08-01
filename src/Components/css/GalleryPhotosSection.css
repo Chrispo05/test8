@@ -1,0 +1,93 @@
+
+
+.image-mosaic {
+    width: 96%;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-auto-rows: 120px;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 3rem;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+   
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    transition: all 500ms;
+    overflow: hidden;
+    background-size:cover;
+    
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+  }
+
+  .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  
+  .card:hover{
+      transform: scale(1.05);
+      cursor: pointer;
+  }
+  .card-tall {
+    grid-row: span 2 / auto;
+  }
+
+  .card-wide {
+    grid-column: span 2 / auto;
+  }
+
+
+  .ril-not-loaded{
+    animation-duration: 0ms;
+  }
+  
+
+  @media screen and (min-width: 540px) {
+    .image-mosaic {
+        width: 94%;
+       
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        grid-auto-rows: 160px;
+      }
+  }
+
+
+  @media screen and (min-width: 600px) {
+    .card-tall {
+      grid-row: span 2 / auto;
+    }
+  
+    .card-wide {
+      grid-column: span 2 / auto;
+    }
+    .image-mosaic {
+        width: 94%;
+       
+     
+      }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .image-mosaic {
+        width: 80%;
+       
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        grid-auto-rows: 200px;
+      }
+  }
+
+
+ 

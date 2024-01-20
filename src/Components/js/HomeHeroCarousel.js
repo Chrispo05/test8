@@ -13,14 +13,19 @@ function HomeHeroCarousel() {
     
     // logic for scroll down button
     function scrollDown() {
-        window.scrollBy(0,400)
+        window.scrollBy({
+            top: 800,
+            left:0,
+            behavior: "smooth"
+
+        })
     }
 
     return (
-    <div>
-        <div className='HomeHeroSectionMainContainer'>
+    <div className='HomeHeroSectionOutsideContainer'>
+        <div className='HomeHeroSectionMainContainer '>
             
-            <Carousel  preventMovementUntilSwipeScrollTolerance={true} stopOnHover={false} infiniteLoop={true} autoPlay={1000} showThumbs={false} showStatus={false} showIndicators={false} >
+            <Carousel  preventMovementUntilSwipeScrollTolerance={true} swipeable={true} stopOnHover={false} infiniteLoop={true} autoPlay={1000} showThumbs={false} showStatus={false} showIndicators={true} >
                
                 <div>
                     <img alt='nevado' src={tourNevado.img1High} />
@@ -56,17 +61,17 @@ function HomeHeroCarousel() {
             </Carousel>
            
 
-           
+            <div className='HomeHeroMessageContainer color-a font-20' >
+                <p className='HomeHeroTitle ' > <span className='font-600  color-b'>Aventura</span> es un estilo de vida!</p>
+                {/* <p className='HomeHeroSlogan'>Nevado, Páramo, Cocora... </p> */}
+                <p className='HomeHeroMessageP3 ' >ven a <span className='color-b font-600'>vivir!</span> </p>
+                <a className='HomeHeroButtona'  href='#/tours' > <button className='hover-scale-02 HomeHeroButton' type='button'>Tours</button>  </a>
+                
+             </div> 
            
             
         </div>
-        <div className='HomeHeroMessageContainer color-f' >
-                <p >Aventura es un estilo de vida!</p>
-                <p >Nevado, Páramo, Cocora... </p>
-                <p className='HomeHeroMessageP3' >ven a vivir! </p>
-                <a  href='/tours' > <button className='hover-scale-02 HomeHeroButton' type='button'>Tours</button>  </a>
-                
-        </div>  
+       
         <div onClick={scrollDown} className='flex-row'>
                      <img className="hero-icon-down" src={HomeHerodownIcon} alt="icondown"/>
         </div>
@@ -76,18 +81,24 @@ function HomeHeroCarousel() {
 
 function HomeHeroCarouselEng() {
         
+    
     // logic for scroll down button
     function scrollDown() {
-        window.scrollBy(0,400)
+        window.scrollBy({
+            top: 800,
+            left:0,
+            behavior: "smooth"
+
+        })
     }
 
     return (
-    <div>
-        <div className='HomeHeroSectionMainContainer'>
+    <div className='HomeHeroSectionOutsideContainer'>
+        <div className='HomeHeroSectionMainContainer '>
             
-            <Carousel  preventMovementUntilSwipeScrollTolerance={true} stopOnHover={false} infiniteLoop={true} autoPlay={500} showThumbs={false} showStatus={false} showIndicators={false} >
+            <Carousel  preventMovementUntilSwipeScrollTolerance={false} swipeable={true} stopOnHover={false} infiniteLoop={true} autoPlay={1000} showThumbs={false} showStatus={false} showIndicators={true} >
                
-            <div>
+                <div>
                     <img alt='nevado' src={tourNevado.img1High} />
                     
                     
@@ -120,15 +131,18 @@ function HomeHeroCarouselEng() {
                 
             </Carousel>
            
+
+            <div className='HomeHeroMessageContainer color-a' >
+                <p className='HomeHeroTitle' > <span className='font-600 font-16 color-b'>Adventure</span> is a lifestyle!</p>
+                {/* <p className='HomeHeroSlogan'>Nevado, Páramo, Cocora... </p> */}
+                <p className='HomeHeroMessageP3 ' >come <span className='color-b font-600'>live!</span> </p>
+                <a className='HomeHeroButtona'  href='#/tours' > <button className='hover-scale-02 HomeHeroButton' type='button'>Tours</button>  </a>
+                
+             </div> 
+           
             
         </div>
-        <div className='HomeHeroMessageContainer color-f' >
-                 <p >Adventure is a lifestyle!</p>
-                 <p >Nevado, Páramo, Cocora... </p>
-                 <p className='HomeHeroMessageP3' >Come live! </p>
-                 <a  href='/toursEng' > <button className='hover-scale-02 HomeHeroButton' type='button'>Tours</button>  </a>
-                
-        </div>
+       
         <div onClick={scrollDown} className='flex-row'>
                      <img className="hero-icon-down" src={HomeHerodownIcon} alt="icondown"/>
         </div>

@@ -235,30 +235,30 @@ const tourParamillo = {
 
     includedENG: ["All risk insurance.","High mountain guide.", "Complete feed, from first day breakfast to last day lunch.",
         "Hot drinks and snacks on shelters and camps ." , "Accomodation 2 night on shelters (bunks).",  
-          "Kitchenware (dishes, spoons, glasses).", "Backpack transportation on horses.",
+          "Kitchenware (dishes, spoons, glasses).",
         "Transportation from Salento to Cocora and the way back."],
 
 
     includedESP:["Guías de alta montaña.", "Seguro contra todo riesgo.", "Alimentación completa, desde el desayuno del día 1, hasta el almuerzo del día 3."
         ,"Bebidas calientes y snacks en campament refugios.","Alojamiento 2 noches en refugio de montaña (camarotes)."
         ,  "Menaje (plato, cuchara, vaso).", "transporte privado desde salento a cocora y visceversa"
-        , "Transporte de equipaje en mula."],
+        ],
         
     itineraryESP:[[`Iniciamos el primer día con el ecuentro del guía a las 6 a.m en tu hostal o 
             lugar definido, tomaremos el desayuno. Después, abordaremos el transporte hacia el valle de cocora 
             (2400 mt). `, `Seguiremos con una caminata de 18km donde nos veremos inmersos en el 
             Bosque de Niebla hasta llegar al Bosque Alto Andino, habitat de una amplia cantidad de 
             especies vegetales, así como muchas especies de mamímeros, insectos, anfibios, aves y reptiles. `, `
-            Llegaremos hasta la Finca la Argentina (3.400mt), refugio donde podremos descansar y alimentarnos rodeados por un ecosistema 100% natural.`,
+            Llegaremos hasta la Finca la Playa (3.700mt), refugio donde podremos descansar y alimentarnos rodeados por un ecosistema 100% natural.`,
              `Finalmente, podremos realizar la comida final del día y descansar en los camarotes del refugio `],
             [`Iniciamos el segundo día al rededor de las 06:30 a.m. Tomaremos el desayuno y comenzaremos una caminata por los bosques. `, 
             `Nos encontraremos inmersos en el páramo , ecosistema más importante en la producción de agua de colombia y hogar de los frailejones .`,
             `Legaremos hasta el paramillo, a unos 4.750 mt de altura, encontraremos el paisaje panorámico más alucinante de la región.`,
-            ` Finalmente, llegaremos al refugio la playa, donde podremos alimentarnos y prepararnos para el último día`],
+            ` Finalmente, llegaremos al refugio la Argentina, donde podremos alimentarnos y prepararnos para el último día`],
             [`Iniciamos el tercer día a las 7:00 a.m y nos preparararemos para iniciar el descenso.`,
-            `Tendremos nuevamente la oportunidad de vernos inmersos en el páramo, bosque alto andino y bosque de niebla. `,
+            `Tendremos nuevamente la oportunidad de vernos inmersos en el bosque alto andino y bosque de niebla. `,
             `Continuaremos el descenso hasta llegar al valle de cocora , allí podremos disfrutar de una bebida y alimentarnos `,
-            `Finalmente, abordaremos el transporte de regreso a salento , llevandonos la experiencia única de haber estado en uno de los lugares mas hermosos a la par que importantes de colombia. ` ]
+            `Finalmente, abordaremos el transporte de regreso a salento , llevandonos la experiencia única de haber estado en uno de los lugares mas hermosos e importantes de colombia. ` ]
            
 
     ],
@@ -266,11 +266,11 @@ const tourParamillo = {
     itinenraryENG:[[`First day starts by meeting at 6 a.m at your hostel or main salentos plaza, we will have breakfast an then we will take our transfer to valle de cocora (2400 mt above sea level).`,
      `We will start with a 18km walk where 
     we will be insersed into the  cloud and alto andino forests where different 
-    species of mammals, insects, reptils, birds and aphibians  live.`, `   We will arrive to Finca la Argentina (3.400mt above sea level), shelter where we can feed and rest sorrounded by this amazin ecosystem.`,
+    species of mammals, insects, reptils, birds and aphibians  live.`, `   We will arrive to Finca la Playa (3.700mt above sea level), shelter where we can feed and rest sorrounded by this amazin ecosystem.`,
      `Finally, we will take last day meat and rest on the shelters bunks`],[` Second day starts around 6:30 a.m, we will have breakfast and start a walk through the páramo. `,
     ` We will be inmersed into one of the most important ecosystems in water production in colombia. Also, we will see the frailejones.`, `We will reach the paramillo, up to 4.750 mt above sea level , here, you will find the best panoramic view. `,
-    `Finally, we will get to Finca la Playa, shelter where we can feed and get ready to last day.`],
-    [`Last day starts at 7:00 a.m ,and after having breakfast, we will take the way back through the Páramo`,
+    `Finally, we will get to Finca la Argentina, shelter where we can feed and get ready to last day.`],
+    [`Last day starts at 7:00 a.m ,and after having breakfast, we will prepare for descending`,
     `Once again, we will pass through the alto andino and cloud forests. `,
     `We will reach the valle de cocora where we can enjoy a nice drink and feed.`,
     `Finally, we will take the transfer back to salento, accompanied by nice emotions and feelings that one of the prettiest places in colombia leaves on you. `]

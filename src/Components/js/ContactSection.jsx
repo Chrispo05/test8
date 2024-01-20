@@ -5,6 +5,9 @@ import iconFacebook from "../../Icons/facebook.png"
 import "../css/RootStyles.css";
 import "../css/ContactSection.css"
 import contactSectionImg from "../../Fotos/contactSection.jpg";
+import { MapView } from "./TourPageMap";
+
+
 
 
 
@@ -19,7 +22,7 @@ function ContactSection() {
                     <div className="flex-column lg-mt-32  ">
                         <p className="mb-0 color-a width-80">La manera más facil de contactarnos es a través de <span className="font-600 ">Whatsapp</span> </p>
                         <div>
-                            <a href="https://wa.me/message/2IVZNZSIXXZYC1" target={"_blank"}   rel="noopener noreferrer" className="flex-row textDecorationNone border-rounded-g10   color-b font-600 mt-10 ">
+                            <a href="https://wa.me/message/2IVZNZSIXXZYC1" target={"_blank"}   rel="noopener noreferrer" className="hover-scale-01 flex-row textDecorationNone border-rounded-g10   color-b font-600 mt-10 ">
                                 <img className="ml-6" src={iconWhatsapp} alt="iconWhatsapp" />
                                 <p className="mr-6 ml-6"> +57 3042085501</p>
 
@@ -30,11 +33,11 @@ function ContactSection() {
                     <div className="flex-column lg-mt-32  ">
                         <p className="mb-0 color-a width-80">También, puedes encontrarnos en  <span className="font-600 ">Instagram y Facebook.</span> </p>
                         <div className="flex-row mt-12">
-                            <a href="https://instagram.com/nevadotrek?igshid=YmMyMTA2M2Y=" target={"_blank"} rel="noopener noreferrer" className="flex-row textDecorationNone color-b font-600 padding-04em border-rounded-g10">
+                            <a href="https://instagram.com/nevadotrek?igshid=YmMyMTA2M2Y=" target={"_blank"} rel="noopener noreferrer" className="hover-scale-01 flex-row textDecorationNone color-b font-600 padding-04em border-rounded-g10">
                                 <img src={iconInstagram} alt="iconWhatsapp" />
                                 
                             </a>
-                            <a  href="https://www.facebook.com/Nevado-Trek-111640871536730" target={"_blank"} rel="noopener noreferrer" className="flex-row textDecorationNone color-b font-600 padding-04em border-rounded-g10">
+                            <a  href="https://www.facebook.com/Nevado-Trek-111640871536730" target={"_blank"} rel="noopener noreferrer" className="hover-scale-01 flex-row textDecorationNone color-b font-600 padding-04em border-rounded-g10">
                                 <img src={iconFacebook} alt="iconWhatsapp" />
                                 
                             </a>
@@ -66,8 +69,8 @@ function ContactSection() {
                 </div>
 
 
-                <div  className="flex-row  contactSectionImgContainer">
-                    <img className="ContactSectionimg" src={contactSectionImg} alt="senderismo"/>
+                <div  className="flex-row  contactSectionImgContainer ContactSectionMapcontainer">
+                    <MapView/>
                 </div>
             </div>
 
@@ -89,7 +92,7 @@ function ContactSectionEng() {
                     <div className="flex-column lg-mt-32  ">
                         <p className="mb-0 color-a width-80">The easiest way to contact us is via <span className="font-600 ">Whatsapp</span> </p>
                         <div>
-                            <a href="https://wa.me/message/2IVZNZSIXXZYC1" target={"_blank"}   rel="noopener noreferrer" className="flex-row textDecorationNone border-rounded-g10   color-b font-600 mt-10 ">
+                            <a href="https://wa.me/message/2IVZNZSIXXZYC1" target={"_blank"}   rel="noopener noreferrer" className="hover-scale-01 flex-row textDecorationNone border-rounded-g10   color-b font-600 mt-10 ">
                                 <img className="ml-6" src={iconWhatsapp} alt="iconWhatsapp" />
                                 <p className="mr-6 ml-6"> +57 3042085501</p>
 
@@ -100,11 +103,11 @@ function ContactSectionEng() {
                     <div className="flex-column lg-mt-32  ">
                         <p className="mb-0 color-a width-80">You can also visit our  <span className="font-600 ">Instagram and Facebook.</span> </p>
                         <div className="flex-row mt-12">
-                            <a href="https://instagram.com/nevadotrek?igshid=YmMyMTA2M2Y=" target={"_blank"} rel="noopener noreferrer" className="flex-row textDecorationNone color-b font-600 padding-04em border-rounded-g10">
+                            <a href="https://instagram.com/nevadotrek?igshid=YmMyMTA2M2Y=" target={"_blank"} rel="noopener noreferrer" className="hover-scale-01 flex-row textDecorationNone color-b font-600 padding-04em border-rounded-g10">
                                 <img src={iconInstagram} alt="iconWhatsapp" />
                                 
                             </a>
-                            <a href="https://www.facebook.com/Nevado-Trek-111640871536730" target={"_blank"} rel="noopener noreferrer" className="flex-row textDecorationNone color-b font-600 padding-04em border-rounded-g10">
+                            <a href="https://www.facebook.com/Nevado-Trek-111640871536730" target={"_blank"} rel="noopener noreferrer" className="hover-scale-01 flex-row textDecorationNone color-b font-600 padding-04em border-rounded-g10">
                                 <img src={iconFacebook} alt="iconWhatsapp" />
                                 
                             </a>
@@ -136,8 +139,8 @@ function ContactSectionEng() {
                 </div>
 
 
-                <div  className="flex-row  contactSectionImgContainer">
-                    <img className="ContactSectionimg" src={contactSectionImg} alt="senderismo"/>
+                <div  className="flex-row  contactSectionImgContainer ContactSectionMapcontainer">
+                    <MapView/>
                 </div>
             </div>
 

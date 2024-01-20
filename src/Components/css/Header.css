@@ -1,10 +1,15 @@
 
-
+.headerMainContainer {
+  height: 100px;
+  max-height: 100px;
+}
 
 
 
 .headerLogoImg{
     width: 58px;
+    margin-left: .6em;
+    margin-right: .4em;
 }
 
 
@@ -12,6 +17,7 @@
     display: flex;
     
     align-items: center;
+   
   
 }
 .headerTitleA{
@@ -24,54 +30,62 @@
 .headerMainContainer{
 
     display: flex;
-    border-bottom:  solid 2px #5470b3 ;
+    border: 1px solid var(--color-g);
     justify-content: space-between;
+    position: fixed;
     
-    
+    z-index: 40;
+    background-color: #fff;
    
+    padding-top: 0em;
+    margin-top: 76px;
+    
+    border-radius: 14px;
+   
+}
+.UnfixHeader{
+  position: absolute;
 }
 
 .headeLinkIcon{
   width: 18px;
   margin-right: .5em;
+  
 }
 
 .headerUlSectionMainContainerHide{
   position: absolute;
-  left: -1000px;
- 
+  left: -800px;
+  
   z-index: 10;
   border-bottom: 10px solid var(--color-a);
   border-radius: 16px;
-  
-  transition: .3s ease-in-out;
+
+  transition: .2s ease-out;
 }
 .headerUlSectionMainContainerShow{
   position: absolute;
-  left: 0px;
+  left: -4px;
+  
+  padding-right: 8px;
   z-index: 10;
   border-radius: 0%;
-  width: auto;
+  width: 100%;
   height: auto;
   border-bottom: 10px solid var(--color-a);
   border-radius: 16px;
-  animation: navBarBounce .6s 1 ease-in-out;
- 
+  transition: .2s ease-out;
+  
   
 }
 
-@keyframes navBarBounce {
-  50%{
-    width:120%
-  }
-  
-}
 
 .headerUlSectionMainContainer{
   margin-top: -1em;
   padding-bottom: 2em;
   width: 100%;
   background-color: var(--color-e);
+ 
 }
 
 
@@ -79,6 +93,7 @@
 .headerSectionsUl{
     
     display: flex;
+   
     width: 100%;
     flex-direction: column;
     justify-content: center;
@@ -88,17 +103,28 @@
    
 }
 
-.headerSectionsUl li{
+.headerSectionsUl a {
    font-weight:600;
-   padding-top: 4em;
+   padding-top: 1em;
+   padding-bottom: 1em;
     padding-left: .5em;
     padding-right: .5em;
     transition: .05s ease-in;
+    
+    width: 100%;
+   
 }
 
-.headerSectionsUl li:hover{
+.headerSectionsUl a :hover{
   border-bottom: 2px solid var(--color-a);
-  padding-bottom: .2em;
+  
+ 
+}
+
+
+.headerSectionsUl a :active{
+  border-bottom: 2px solid var(--color-a);
+ 
  
 }
 
@@ -115,24 +141,36 @@
 
 
 .headerLanguageSelect{
-    
+    border-radius: 8px;
     background-color: var(--color-a);
     color: var(--color-e);
     margin-top: 6px;
-    padding: 4px 0px;
-    transition: .4s ease-in;
+    padding: 4px 4px;
+    transition: .2s ease-in;
+}
+.headerLanguageSelect select{
+  border-radius: 14px;
 }
 
 .headerLanguageSelect:hover{
     cursor: pointer;
+    outline: none;
+    border-radius: 8px;
+    
  }
  .headerLanguageSelect:active{
-    transform: scale(1.8);
+    transform: scale(1.2);
+    outline: none;
+    background-color: var(--color-b);
+    border-radius: 8px;
  }
+ 
+
  
  .headerLanguageSelect option{
      background-color: var(--color-a);
      color: var(--color-e);
+     border-radius: 8px;
  }
  
  /* nav-icon-5 */
@@ -153,7 +191,7 @@
     transition: .3s cubic-bezier(.8, .5, .2, 1.4);
     width:100%;
     height: 4px;
-    transition-duration: 500ms
+    transition-duration: 300ms
   }
   .nav-icon-5 span:nth-child(1){
     top:0px;
@@ -207,7 +245,7 @@
       position: relative;
       background-color: #fff;
       border-radius: 0;
-      width: 50%;
+      width: 46%;
       height: auto;
       display: flex;
       justify-content: center;
@@ -227,8 +265,9 @@
       flex-direction: row;
     }
 
-    .headerSectionsUl li{
+    .headerSectionsUl a{
       padding-top: 0px;
+      padding-bottom: 0px;
     }
 
     .HeaderButtonMainContainer{

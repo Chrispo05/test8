@@ -1,0 +1,166 @@
+
+
+figure.snip1157 {
+  
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  margin-top:8px;
+  
+  min-width: 88%;
+  max-width: 390px;
+  
+  color: #333;
+  text-align: left;
+  
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+   
+  border-radius: .8em;
+  padding: 12px;
+}
+figure.snip1157 * {
+  -webkit-box-sizing: border-box;
+  
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+  transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+}
+
+
+figure.snip1157 img {
+  max-width: 100%;
+  vertical-align: middle;
+  height: 72px;
+  width: 72px;
+  border-radius: 12px;
+  
+  
+
+  
+}
+
+
+.testimonialImgContainer{
+  
+  width: 100% !important;
+  justify-content: space-around;
+  
+}
+figure.snip1157 .author {
+    position: relative;
+    
+    
+    margin: 0;
+    margin-bottom: 32px;
+    
+    color:var(--color-a);
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%);
+    margin-left: 16px;
+    
+  }
+  
+.Figure-rating-img{
+  
+    position: absolute;
+    top: -6px;
+    margin-left: .2em;
+    
+}
+figure.snip1157 blockquote {
+  display: block;
+  border-radius: .8em;
+  position: relative;
+    
+  padding-top: 1.2em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 2.6em;
+  
+  
+  margin: 0;
+  
+  
+ 
+}
+figure.snip1157 blockquote:before,
+figure.snip1157 blockquote:after {
+  font-family: 'FontAwesome';
+  content: "\201C";
+  position: absolute;
+  font-size: 50px;
+  opacity: 0.6;
+  font-style: normal;
+  color: var(--color-a);
+}
+figure.snip1157 blockquote:before {
+  top: -16px;
+  left: 8px;
+ 
+  
+
+}
+figure.snip1157 blockquote:after {
+  content: "\201D";
+  
+  right: 16px;
+  bottom: -16px;
+}
+
+
+
+figure.snip1157 .author h5 {
+  opacity: 0.8;
+  margin: 0;
+  font-weight: 600;
+  font-size: 14px;
+}
+figure.snip1157 .author h5 span {
+  font-weight: 400;
+  text-transform: none;
+  padding-left: 5px;
+}
+
+
+
+
+.Testimonials2-main-container{
+    margin: 16px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1000px) {
+   
+  figure.snip1157{
+    max-width: 600px;
+  }
+   
+  }

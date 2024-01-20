@@ -10,8 +10,10 @@ import {HomeTourCarousel, HomeTourCarouselEng} from "./Components/js/HomeTourCar
 
 import { GalleryCustom, GalleryCustomEng } from './Components/js/GalleryCustom';
 import { Tour, TourEng } from './Components/js/TourPage';
+
 import {Footer, FooterEng} from "./Components/js/Footer.jsx";
 import { ContactSection, ContactSectionEng } from './Components/js/ContactSection';
+import { MapView } from './Components/js/TourPageMap';
 
 const arrayToursInfo = [tourNevado, tourParamillo, tourParamo,tourCarbonera,tourCocora,tourTapir];
 
@@ -35,8 +37,8 @@ function App() {
          <Route path='/HomeEng' element={ <HomeEng/>  }>   </Route>   
          <Route path='tours' element={ <Tours/>  }>    </Route>
          <Route path='/toursEng' element={ <ToursEng/>  }>    </Route>
-         <Route path='/tour' element={ <TourSection/>  }>    </Route>
-         <Route path='/tourEng' element={ <TourSectionEng/>  }>    </Route>
+         <Route path='/tour/:id' element={ <TourSection/>  }>    </Route>
+         <Route path='/tourEng/:id' element={ <TourSectionEng/>  }>    </Route>
          <Route path='/gallery' element={ <Gallery/>  }>     </Route>
          <Route path='/galleryEng' element={ <GalleryEng/>  }>     </Route>
          <Route path='/contact' element={ <Contact/>  }>    </Route>
@@ -56,9 +58,9 @@ function Home() {
       
       <Header/>
       <HomeHeroCarousel/>
-      <HomeTourSection1 tourInfo={tourNevado} href="/tour?id=tourNevado" />
-      <HomeTourSection1 tourInfo={tourParamillo}  href="/tour?id=tourParamillo" reverse="flex-row-reverse" />
-      <HomeTourSection1 tourInfo={tourParamo}  href="/tour?id=tourParamo" />
+      <HomeTourSection1 tourInfo={tourNevado} href="#/tour/tourNevado" />
+      <HomeTourSection1 tourInfo={tourParamillo}  href="#/tour/tourParamillo" reverse="flex-row-reverse" />
+      <HomeTourSection1 tourInfo={tourParamo}  href="#/tour/tourParamo" />
       <HomeTourCarousel/>
       <Footer/>
 
@@ -76,9 +78,9 @@ function HomeEng(){
       
     <HeaderEng/>
     <HomeHeroCarouselEng/>
-    <HomeTourSection1Eng tourInfo={tourNevado} href="/tourEng?id=tourNevado" />
-    <HomeTourSection1Eng tourInfo={tourParamillo}  href="/tourEng?id=tourParamillo" reverse="flex-row-reverse" />
-    <HomeTourSection1Eng tourInfo={tourParamo}  href="/tourEng?id=tourParamo" />
+    <HomeTourSection1Eng tourInfo={tourNevado} href="#/tourEng/tourNevado" />
+    <HomeTourSection1Eng tourInfo={tourParamillo}  href="#/tourEng/tourParamillo" reverse="flex-row-reverse" />
+    <HomeTourSection1Eng tourInfo={tourParamo}  href="#/tourEng/tourParamo" />
     <HomeTourCarouselEng/>
     <FooterEng/>
 
@@ -132,8 +134,12 @@ function GalleryEng() {
 function TourSection() {
   return(
     <div>
-     <Header/>
+     <Header isNotFixed={true} />
+
+     
       <Tour/>
+      <MapView/>
+      <HomeTourCarousel/>
       <Footer/>
     </div>
   )
@@ -141,8 +147,10 @@ function TourSection() {
 function TourSectionEng() {
   return(
     <div>
-     <HeaderEng/>
+     <HeaderEng isNotFixed={true}/>
       <TourEng/>
+      <MapView/>
+      <HomeTourCarouselEng/>
       <FooterEng/>
     </div>
   )
@@ -152,6 +160,7 @@ function Contact() {
   return(
     <div>
       <Header/>
+      
       <ContactSection/>
       <Footer/>
     </div>

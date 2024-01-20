@@ -3,14 +3,14 @@
     border-radius: 8px;
     border: none;
     background-color: var(--color-c);
-    color: var(--color-f);
+    color: var(--color-e);
     font-weight: 600;
     margin-bottom: 1em;
     transition: .2s ease-in;
 }
 
 .ButtonCustomButton:hover{
-    background-color: var(--color-f);
+    background-color: var(--color-e);
     color: var(--color-c);
     border: 2px solid var(--color-c);
     cursor: pointer;

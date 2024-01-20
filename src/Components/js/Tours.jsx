@@ -11,7 +11,7 @@ import "../css/RootStyles.css"
 
 function Card(props) {
     return(
-        <a href={`/tour?id=${props.tourInfo.tourID}`} className="textDecorationNone TourCardContainer color-a shadow-1 hover-scale-005 ">
+        <a href={`#/tour/${props.tourInfo.tourID}`} className="textDecorationNone TourCardContainer color-a shadow-1 hover-scale-005 ">
                     <div className="ToursCardsTimeContainer">
                         <img src={timeLogo} alt="salento" />
                         <p className="ToursCardTimeP" >{props.tourInfo.timeShortESP}</p>
@@ -24,7 +24,7 @@ function Card(props) {
                             <h3 className="hover-scale-005" > {props.tourInfo.nameESP}  </h3>
                             <p className="hover-scale-005 TourCardP color-b font-600">{props.tourInfo.priceCOP} </p>
                             <p className="hover-scale-005 TourCardP">{props.tourInfo.shortDescriptionESP} </p>
-                            <ButtonCustom href={`/tour?id=${props.tourInfo.tourID}`} message="Ver más..." />
+                            <ButtonCustom href={`#/tour/${props.tourInfo.tourID}`} message="Ver más..." />
 
                         </div>   
 
@@ -36,7 +36,7 @@ function Card(props) {
 }
 function CardEng(props) {
     return(
-        <a href={`/tourEng?id=${props.tourInfo.tourID}`} className="textDecorationNone TourCardContainer color-a shadow-1 hover-scale-005 ">
+        <a href={`#/tourEng/${props.tourInfo.tourID}`} className="textDecorationNone TourCardContainer color-a shadow-1 hover-scale-005 ">
                     <div className="ToursCardsTimeContainer">
                         <img src={timeLogo} alt="salento" />
                         <p className="ToursCardTimeP" >{props.tourInfo.timeShortENG}</p>
@@ -49,7 +49,7 @@ function CardEng(props) {
                             <h3 className="hover-scale-005" > {props.tourInfo.nameENG}  </h3>
                             <p className="hover-scale-005 TourCardP color-b font-600">{props.tourInfo.priceUSD} </p>
                             <p className="hover-scale-005 TourCardP">{props.tourInfo.shortDescriptionENG} </p>
-                            <ButtonCustom href={`/tourEng?id=${props.tourInfo.tourID}`} message="see more..." />
+                            <ButtonCustom href={`#/tourEng/${props.tourInfo.tourID}`} message="see more..." />
 
                         </div>   
 

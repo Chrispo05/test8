@@ -1,0 +1,67 @@
+/* //css del mapa en leaflet */
+
+.TourSectionMapContainer{
+    margin-top: 32px;
+    margin-left: 32px;
+    margin-bottom: 12px;
+}
+
+
+
+.leaflet-container{
+    width:84%;
+   height:340px;
+   z-index:2;
+   
+  }
+  
+  
+  
+  
+  
+
+@media screen and (min-width: 700px){
+    .TourSectionMapMainContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .TourSectionMapContainer{
+        margin: 0;
+        margin-top: 32px;
+        margin-bottom: 12px;
+    }
+
+    .leaflet-container{
+        width:84%;
+       height:440px;
+     
+       
+      }
+
+
+
+
+
+}
+
+@media screen and (min-width: 900px){
+    .leaflet-container{
+        width:94%;
+     
+     
+       
+      }
+
+}
+@media screen and (min-width: 1000px){
+    .leaflet-container{
+        width:70%;
+       height:540px;
+     
+       
+      }
+
+}

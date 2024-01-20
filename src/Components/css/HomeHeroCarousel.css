@@ -3,6 +3,7 @@
     justify-content: center;
     
     position: relative ;
+    margin-top: 32px;
     
 }
 
@@ -10,6 +11,7 @@
 .carousel-root{
     width: 100%;
     margin-top: 32px;
+    padding-bottom: 3em;
     
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;box-shadow: rgba(50, 50, 93, 0.65) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     border-radius: 16px;
@@ -20,18 +22,31 @@
 
 .slider-wrapper{
     border-radius: 16px;
+    padding: -.5em;
     
 }
 
+.HomeHeroSectionOutsideContainer{
+    position: relative;
+}
+
 .HomeHeroMessageContainer{
+    font: 16px;
     position: absolute;
-    top: 160px;
-    right: 10%;
-    left: 10%;
-    
-    background: rgba(3, 31, 39, 0.43);
-    border-radius: 14px;
+    width: 95%;
+    height: 64px;
+
+   left: 0;
+    top: 50px;
+    right: 0;
+    margin: auto;
+    padding: auto;
    
+    
+    background: rgba(232, 236, 237, 0.778);
+        border-bottom-left-radius: 14px;
+        border-bottom-right-radius: 14px;
+   backdrop-filter: blur(16px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,30 +58,66 @@
 }
 .HomeHeroMessageContainer button:hover{
     background-color: var(--color-c);
-    color: var(--color-f);
+   
+    color: var(--color-e);
+  
 }
 
-.HomeHeroMessageContainer p{
-    text-align: center;
-   
-    padding-left: 1em;
-    padding-right: 1em;
-    font-size: 18px;
+.HomeHeroTitle{
+    margin-top: 30px;
+    margin-bottom: 0;
+    
+}
+
+.HomeHeroSlogan{
+    margin-top: 0;
 }
 .HomeHeroMessageP3{
-    margin-top: -1em;
+    margin-top: 0;
+    padding-bottom: .8em;
 }
+
+
 .HomeHeroButton{
+    position: absolute;
     padding-left: 1em;
     padding-right: 1em;
     padding-top: .5em;
     padding-bottom: .5em;
-    background-color: var(--color-f);
+    left: 0;
+    right: 0;
+    margin:auto;
+    margin-top: 40px;
+    width: 24%;
+    
+    background-color: rgba(232, 236, 237, 0.733);
+    backdrop-filter: blur(12px);
+    
+   
+    
+
     border: none;
     font-size: 16px;
     color: var(--color-a);
     font-weight: 700;
 }
+
+
+
+
+.control-arrow{
+    display: none !important;
+}
+
+.control-dots .selected{
+    background-color:aliceblue !important;
+    color: aliceblue !important;
+}
+.control-dots .dot{
+    background-color:aliceblue !important;
+    color: aliceblue !important;
+}
+
 
 .hero-icon-down{
     margin-top: 32px;
@@ -87,25 +138,86 @@
 }
 
 
+@media screen and (min-width: 360px) {
+    
+    .HomeHeroMessageContainer {
+       height: 64px;
+    }
+    .HomeHeroButton{
+        top:110px;
+    }
+   
+    
+  }
 
-
-
+  @media screen and (min-width: 400px) {
+    
+  
+    .HomeHeroButton{
+        top:130px;
+    }
+   
+    
+  }
 
 @media screen and (min-width: 420px) {
     
-    .HomeHeroMessageContainer p{
-        font-size: 20px;
+  
+    .HomeHeroMessageContainer {
+        height: 74px;
+        
+     }
+     .HomeHeroButton{
+         top:146px;
+     }
+    
+  }
+
+  
+@media screen and (min-width: 450px) {
+    
+  
+   
+     .HomeHeroButton{
+         top:166px;
+     }
+    
+  }
+
+  @media screen and (min-width: 480px) {
+    
+  
+   
+    .HomeHeroButton{
+        top:186px;
     }
-    .HomeHeroMessageContainer{
-        top: 180px;
+   
+ }
+@media screen and (min-width: 500px) {
+    .HomeHeroMessageContainer {
+        width:96%;
+    }
+  
+    .HomeHeroButton{
+        top:206px;
+        width: 20%;
     }
     
   }
-@media screen and (min-width: 500px) {
-    
+
+  @media screen and (min-width: 530px) {
   
-    .HomeHeroMessageContainer{
-        top: 210px;
+    .HomeHeroButton{
+        top:226px;
+    }
+    
+  }
+
+  @media screen and (min-width: 570px) {
+  
+    .HomeHeroButton{
+        top:256px;
+        width: 94px;
     }
     
   }
@@ -116,21 +228,28 @@
   
 
     }
-    .HomeHeroMessageContainer p{
-        font-size: 26px;
+    
+    .HomeHeroTitle span{
+        font-size: 20px;
     }
-    .HomeHeroMessageContainer{
-        top: 180px;
+    .HomeHeroMessageContainer {
+        font-size: 20px;
+        height: 80px;
     }
+
+    .HomeHeroButton{
+        top:206px;
+    }
+  
     
  
    
   }
 @media screen and (min-width: 680px) {
-  .HomeHeroMessageContainer{
-    top: 240px;
-  }
-    
+
+    .HomeHeroButton{
+        top:346px;
+    }
  
    
   }
@@ -144,42 +263,87 @@
     .carousel-root{
         width: 90%;
     }
+    .control-arrow{
+        display: block !important;
+        width: 60px;
+        position: absolute;
+        background: none !important;
+        top: 0 !important;
+        bottom: 0 !important;
+        margin: auto !important;
+
+        
+
+
+
+
+
+    }
+   
   
   }
 
 
   @media screen and (min-width: 1000px) {
-    .slide{
-        
-        height: 520px;
-        max-height: 620px;
-    }
+  
     .carousel-root{
         width: 70%;
     }
-    .HomeHeroMessageContainer{
-            left: 20%;
-            right: 20%;
-    }
+   
 
     
    
 
   }
 
-  @media screen and (min-width: 1210px) {
+  @media screen and (min-width: 1200px) {
     
     .carousel-root{
         width: 60%;
     }
-    .HomeHeroMessageContainer{
-        top: 300px;
-        left: 25%;
-        right: 25%;
-}
- 
+
+    .HomeHeroMessageContainer {
+        margin-top: 32px;
+        height: 134px;
+        width:88%;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+    }
+
+    .HomeHeroSectionMainContainer{
+     
+        margin-top: 0px;
+        
+    }
+    .HomeHeroButton{
+        top:566px;
+        width: 120px;
+        font-size: 18px;
+        backdrop-filter: blur(12px);
+    }
+    
   
 
+  }
+
+  @media screen and (min-width: 1280px){
+    
+    .HomeHeroMessageContainer {
+      
+        width:84%;
+      
+    }
+  }
+
+  @media screen and (min-width: 1380px){
+    
+    .HomeHeroMessageContainer {
+  
+        width:76%;
+      
+    }
+
+    
   }
 
 

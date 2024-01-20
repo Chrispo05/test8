@@ -5,11 +5,12 @@ import timeIcon from "../../Icons/duration.png";
 import {ButtonCustom} from "./ButtonCustom.jsx";
 import "../css/HomeTourCarousel.css";
 import "../css/RootStyles.css";
+import { scrollTop } from './Helpers.jsx';
 
 
 function HomeTourCarouselCard(props) {
     return(
-        <div className='shadow-1 HomeTourCarouselCardMainContainer hover-scale-005  '>
+        <div onClick={()=> {window.location.href = `#/tour/${props.tourInfo.tourID}`; scrollTop()} } className='shadow-1 HomeTourCarouselCardMainContainer hover-scale-005  '>
             <div className='  HomeTourCarouselTimeContainer '>   
                 <div className='HomeTourCarouselTimeContainer color-b  '>
                      <img className='HomeTourCarouselCardTimeIcon '  src={timeIcon} alt='timeIcon'/>
@@ -25,7 +26,7 @@ function HomeTourCarouselCard(props) {
                 <p className='HomeTourCarouselCardPrice color-b font-600 '>Desde {props.tourInfo.priceCOP}  </p>
                 
                 <div>
-                    <ButtonCustom message="Ver más..." href={ `/tour?id=${props.tourInfo.tourID}`}/>
+                    <ButtonCustom message="Ver más..." href={ `#/tour/${props.tourInfo.tourID}`}/>
                 </div>
             </div>
         </div>
@@ -33,8 +34,8 @@ function HomeTourCarouselCard(props) {
 }
 function HomeTourCarouselCardEng(props) {
     return(
-        <div className='shadow-1 HomeTourCarouselCardMainContainer hover-scale-005  '>
-            <div className='  HomeTourCarouselTimeContainer '>   
+        <div  onClick={()=> {window.location.href = `#/tourEng/${props.tourInfo.tourID}`; scrollTop()} }  className='shadow-1 HomeTourCarouselCardMainContainer hover-scale-005  '>
+            <div  className='  HomeTourCarouselTimeContainer '>   
                 <div className='HomeTourCarouselTimeContainer color-b  '>
                      <img className='HomeTourCarouselCardTimeIcon '  src={timeIcon} alt='timeIcon'/>
                       {props.tourInfo.timeShortENG}  
@@ -49,7 +50,7 @@ function HomeTourCarouselCardEng(props) {
                 <p className='HomeTourCarouselCardPrice color-b font-600 '>From {props.tourInfo.priceUSD}  </p>
                 
                 <div>
-                    <ButtonCustom message="See more..." href={ `/tourEng?id=${props.tourInfo.tourID}`}/>
+                    <ButtonCustom  message="See more..." href={ `#/tourEng/${props.tourInfo.tourID}`}/>
                 </div>
             </div>
         </div>
@@ -113,7 +114,7 @@ function HomeTourCarousel() {
                
 
             </div>
-            <ButtonCustom className="HomeTourCarouselButton" message="Ver tours..." href="/tours"/>
+            <ButtonCustom className="HomeTourCarouselButton" message="Ver tours..." href="#/tours"/>
         </div> 
     )
 }
@@ -174,7 +175,7 @@ function HomeTourCarouselEng() {
                
 
             </div>
-            <ButtonCustom className="HomeTourCarouselButton" message="See tours..." href="/toursEng"/>
+            <ButtonCustom className="HomeTourCarouselButton" message="See tours..." href="#/toursEng"/>
         </div> 
     )
 }

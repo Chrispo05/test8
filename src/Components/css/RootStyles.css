@@ -30,6 +30,9 @@
 .color-f{
     color: var(--color-f);
 }
+.color-e{
+    color: var(--color-e);
+}
 .color-h{
     color: var(--color-h);
 }
@@ -216,6 +219,9 @@
     flex-wrap: wrap-reverse;
 }
 
+.positioned-relative{
+    position: relative;
+}
 
 .rounded-sm{
     border-radius: 22%;

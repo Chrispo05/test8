@@ -22,7 +22,7 @@ const IMAGES =
 {
         src: `${toursInfoArray[0].img2High}`,
         thumbnail: `${toursInfoArray[0].img2}`,
-        thumbnailWidth: 320,
+        thumbnailWidth: 206,
         thumbnailHeight: 212,
        
         caption: `${toursInfoArray[0].nameESP}`
@@ -30,7 +30,7 @@ const IMAGES =
 {
         src: `${toursInfoArray[0].img1High}`,
         thumbnail: `${toursInfoArray[0].img1}`,
-        thumbnailWidth: 320,
+        thumbnailWidth: 206,
         thumbnailHeight: 212,
        
         caption: `${toursInfoArray[0].nameESP}`
@@ -46,7 +46,7 @@ const IMAGES =
 {
         src: `${toursInfoArray[1].img1High}`,
         thumbnail: `${toursInfoArray[1].img1}`,
-        thumbnailWidth: 320,
+        thumbnailWidth: 420,
         thumbnailHeight: 212,
        
         caption: `${toursInfoArray[1].nameESP}`
@@ -54,7 +54,7 @@ const IMAGES =
 {
         src: `${toursInfoArray[1].img2High}`,
         thumbnail: `${toursInfoArray[1].img2}`,
-        thumbnailWidth: 320,
+        thumbnailWidth: 206,
         thumbnailHeight: 212,
        
         caption: `${toursInfoArray[1].nameESP}`
@@ -62,7 +62,7 @@ const IMAGES =
 {
         src: `${toursInfoArray[1].img3High}`,
         thumbnail: `${toursInfoArray[1].img3}`,
-        thumbnailWidth: 320,
+        thumbnailWidth: 206,
         thumbnailHeight: 212,
        
         caption: `${toursInfoArray[1].nameESP}`
@@ -70,7 +70,7 @@ const IMAGES =
 {
         src: `${toursInfoArray[1].img8High}`,
         thumbnail: `${toursInfoArray[1].img8}`,
-        thumbnailWidth: 420,
+        thumbnailWidth: 320,
         thumbnailHeight: 212,
        
         caption: `${toursInfoArray[1].nameESP}`
@@ -78,7 +78,7 @@ const IMAGES =
 {
         src: `${toursInfoArray[2].img1High}`,
         thumbnail: `${toursInfoArray[2].img1}`,
-        thumbnailWidth: 320,
+        thumbnailWidth: 206,
         thumbnailHeight: 212,
        
         caption: `${toursInfoArray[2].nameESP}`
@@ -86,7 +86,7 @@ const IMAGES =
 {
         src: `${toursInfoArray[2].img9High}`,
         thumbnail: `${toursInfoArray[2].img9}`,
-        thumbnailWidth: 320,
+        thumbnailWidth: 200,
         thumbnailHeight: 212,
        
         caption: `${toursInfoArray[2].nameESP}`
@@ -102,7 +102,7 @@ const IMAGES =
 {
         src: `${toursInfoArray[2].img4High}`,
         thumbnail: `${toursInfoArray[2].img4}`,
-        thumbnailWidth: 320,
+        thumbnailWidth: 200,
         thumbnailHeight: 212,
        
         caption: `${toursInfoArray[2].nameESP}`
@@ -110,7 +110,7 @@ const IMAGES =
 {
         src: `${toursInfoArray[1].img6High}`,
         thumbnail: `${toursInfoArray[1].img6}`,
-        thumbnailWidth: 420,
+        thumbnailWidth: 200,
         thumbnailHeight: 212,
        
         caption: `${toursInfoArray[1].nameESP}`
@@ -118,7 +118,7 @@ const IMAGES =
 {
         src: `${toursInfoArray[2].img6High}`,
         thumbnail: `${toursInfoArray[2].img6}`,
-        thumbnailWidth: 320,
+        thumbnailWidth: 400,
         thumbnailHeight: 212,
        
         caption: `${toursInfoArray[2].nameESP}`
@@ -126,7 +126,7 @@ const IMAGES =
 {
         src: `${toursInfoArray[2].img7High}`,
         thumbnail: `${toursInfoArray[2].img7}`,
-        thumbnailWidth: 320,
+        thumbnailWidth: 200,
         thumbnailHeight: 212,
        
         caption: `${toursInfoArray[2].nameESP}`
@@ -134,7 +134,7 @@ const IMAGES =
 {
         src: `${toursInfoArray[2].img8High}`,
         thumbnail: `${toursInfoArray[2].img8}`,
-        thumbnailWidth: 320,
+        thumbnailWidth: 200,
         thumbnailHeight: 212,
        
         caption: `${toursInfoArray[2].nameESP}`
@@ -150,7 +150,7 @@ const IMAGES =
 {
         src: `${toursInfoArray[3].img7High}`,
         thumbnail: `${toursInfoArray[3].img7}`,
-        thumbnailWidth: 320,
+        thumbnailWidth: 400,
         thumbnailHeight: 212,
        
         caption: `${toursInfoArray[3].nameESP}`
@@ -158,7 +158,7 @@ const IMAGES =
 {
         src: `${toursInfoArray[3].img1High}`,
         thumbnail: `${toursInfoArray[3].img1}`,
-        thumbnailWidth: 320,
+        thumbnailWidth: 400,
         thumbnailHeight: 212,
        
         caption: `${toursInfoArray[3].nameESP}`
@@ -166,7 +166,7 @@ const IMAGES =
 {
         src: `${toursInfoArray[4].img1High}`,
         thumbnail: `${toursInfoArray[4].img1}`,
-        thumbnailWidth: 420,
+        thumbnailWidth: 200,
         thumbnailHeight: 212,
        
         caption: `${toursInfoArray[4].nameESP}`
@@ -174,7 +174,7 @@ const IMAGES =
 {
         src: `${toursInfoArray[4].img2High}`,
         thumbnail: `${toursInfoArray[4].img2}`,
-        thumbnailWidth: 320,
+        thumbnailWidth: 200,
         thumbnailHeight: 212,
        
         caption: `${toursInfoArray[4].nameESP}`
@@ -182,7 +182,7 @@ const IMAGES =
 {
         src: `${toursInfoArray[5].img2High}`,
         thumbnail: `${toursInfoArray[5].img2}`,
-        thumbnailWidth: 320,
+        thumbnailWidth: 200,
         thumbnailHeight: 212,
        
         caption: `${toursInfoArray[5].nameESP}`
@@ -190,7 +190,7 @@ const IMAGES =
 {
         src: `${toursInfoArray[4].img3High}`,
         thumbnail: `${toursInfoArray[4].img3}`,
-        thumbnailWidth: 420,
+        thumbnailWidth: 200,
         thumbnailHeight: 212,
        
         caption: `${toursInfoArray[4].nameESP}`
@@ -198,7 +198,7 @@ const IMAGES =
 {
         src: `${toursInfoArray[5].img3High}`,
         thumbnail: `${toursInfoArray[5].img3}`,
-        thumbnailWidth: 320,
+        thumbnailWidth: 400,
         thumbnailHeight: 212,
        
         caption: `${toursInfoArray[5].nameESP}`
@@ -206,7 +206,7 @@ const IMAGES =
 {
         src: `${toursInfoArray[3].img2High}`,
         thumbnail: `${toursInfoArray[3].img2}`,
-        thumbnailWidth: 420,
+        thumbnailWidth: 320,
         thumbnailHeight: 212,
        
         caption: `${toursInfoArray[3].nameESP}`
@@ -214,7 +214,7 @@ const IMAGES =
 {
         src: `${toursInfoArray[4].img4High}`,
         thumbnail: `${toursInfoArray[4].img4}`,
-        thumbnailWidth: 320,
+        thumbnailWidth: 200,
         thumbnailHeight: 212,
        
         caption: `${toursInfoArray[4].nameESP}`
@@ -222,7 +222,7 @@ const IMAGES =
 {
         src: `${toursInfoArray[5].img4High}`,
         thumbnail: `${toursInfoArray[5].img4}`,
-        thumbnailWidth: 320,
+        thumbnailWidth: 200,
         thumbnailHeight: 212,
        
         caption: `${toursInfoArray[5].nameESP}`
@@ -230,7 +230,7 @@ const IMAGES =
 {
         src: `${toursInfoArray[5].img5High}`,
         thumbnail: `${toursInfoArray[5].img5}`,
-        thumbnailWidth: 320,
+        thumbnailWidth: 400,
         thumbnailHeight: 212,
        
         caption: `${toursInfoArray[5].nameESP}`

@@ -8,9 +8,16 @@
 }
 
 .HomeTourCarouselTimeContainer{
-    margin-top: 2px;
+    margin-top: 0px;
     margin-right: 4px;
+    margin-bottom: 2px;
+    font-weight: 600;
     text-align: right;
+    font-size: 14px;
+}
+.HomeTourCarouselTimeContainer img{
+    margin-right: 2px;
+    transform: translateY(4px);
 }
 
 .HomeTourCarouselCardTimeIcon{

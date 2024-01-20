@@ -1,12 +1,46 @@
-.ContactSectionimg{
-    width: 80%;
-    border-radius: 12px;
+
+  /* css para controlar los estilos del mapa de la seccion de contacto */
+  .TourSectionMapMainContainer{
+    width: 100%;
+
+  } 
+.contactSectionImgContainer{
+    
+    padding: 0;
+    
 }
+
+
+.TourSectionMapContainer{
+    width: 100%;
+
+}
+
+
+
+
+  .leaflet-container{
+    width: 100%;
+    height:50%
+    
+   }
+   
+
+
+
+
+.contactSectionMainContainer{
+    margin-top: 96px;
+}
+
+
+
 
 .contactSectionContainer{
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
+  
 }
 
 @media screen and (min-width: 700px) {
@@ -38,7 +72,7 @@
     .contactSectionContainer{
         
         flex-direction: row;
-        width: 90%;
+        width: 100%;
         justify-content: space-evenly;
         
 
@@ -49,10 +83,11 @@
     }
     .contactSectionImgContainer{
         width: 50%;
+        
     }
 
     .contactSectionMainContainer{
-        margin-top: 32px;
+        margin-top: 96px;
     }
    
   }
@@ -60,9 +95,17 @@
   @media screen and (min-width: 1400px) {
   
     .contactSectionMainContainer{
-        margin-top: 80px;
+        margin-top: 132px;
         margin-bottom: 64px;
     }
     
    
   }
+
+
+
+
+
+
+
+
